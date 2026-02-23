@@ -25,15 +25,10 @@ Create a `.env` file in the `ai-service` directory:
 
 ```bash
 cd ai-service
-echo "ZHIPU_API_KEY=your-actual-api-key-here" > .env
+echo "ZHIPU_API_KEY=YOUR_API_KEY_HERE" > .env
 ```
 
-Or edit `configs/config.yaml`:
-
-```yaml
-llm:
-  api_key: "your-actual-api-key-here"
-```
+**Important**: Replace `YOUR_API_KEY_HERE` with your actual API key from step 1.
 
 ### 3. Install Dependencies
 
@@ -57,17 +52,10 @@ cd ..
 #### Option A: Quick Start (Windows)
 
 ```bash
-start-dev.bat
+start.bat
 ```
 
-#### Option B: Quick Start (Linux/Mac)
-
-```bash
-chmod +x start-dev.sh
-./start-dev.sh
-```
-
-#### Option C: Manual Start
+#### Option B: Manual Start
 
 Open 3 separate terminal windows:
 
@@ -124,10 +112,10 @@ lsof -ti:8080 | xargs kill -9
 Ensure your `.env` file is correctly formatted:
 
 ```env
-ZHIPU_API_KEY=your-key-here
+ZHIPU_API_KEY=YOUR_API_KEY_HERE
 ```
 
-No quotes around the key!
+**Note**: No quotes around the key!
 
 ### Module Not Found Errors
 
