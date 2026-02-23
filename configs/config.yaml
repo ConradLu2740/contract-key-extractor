@@ -1,0 +1,26 @@
+server:
+  host: "127.0.0.1"
+  port: 8080
+  mode: "debug"
+
+ai_service:
+  host: "127.0.0.1"
+  port: 8000
+  timeout: 60
+
+upload:
+  path: "./uploads"
+  max_size: 52428800
+
+output:
+  path: "./outputs"
+
+llm:
+  provider: "zhipu"
+  api_key: "${ZHIPU_API_KEY}"
+  model: "glm-4"
+  ocr_model: "glm-4v"
+
+logging:
+  level: "debug"
+  format: "console"
